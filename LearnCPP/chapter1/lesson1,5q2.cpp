@@ -1,7 +1,8 @@
 #include <iostream>
 
 // Asks the user to provide three numbers and display them in a formatted output
-int main(){
+int main()
+{
     std::cout << "Enter three numbers seperated by space: ";
 
     int x{};
