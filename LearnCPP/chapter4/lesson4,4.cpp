@@ -2,12 +2,14 @@
 
 int main()
 {
-    // assume 4 byte integers
-    int x { 2'147'483'647 }; // the maximum value of a 4-byte signed integer
-    std::cout << x << '\n';
+	std::cout << std::boolalpha; // print bools as true or false
 
-    x = x + 1; // integer overflow, undefined behavior
-    std::cout << x << '\n';
+	bool b1 = 4 ; // copy initialization allows implicit conversion from int to bool
+	std::cout << b1 << '\n';
 
-    return 0;
+	bool b2 = 0 ; // copy initialization allows implicit conversion from int to bool
+	std::cout << b2 << '\n';
+
+
+	return 0;
 }
