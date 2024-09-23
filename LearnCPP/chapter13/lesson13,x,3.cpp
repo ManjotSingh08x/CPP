@@ -11,8 +11,6 @@ template <typename T>
 void print(Triad<T> a){
     cout<<'['<<a.a<<", "<<a.b<<", "<<a.c<<']';
 }
-template <typename T>
-Triad(T, T, T) -> Triad<T>;
 
 int main() {
     Triad t1{ 1, 2, 3}; // note: uses CTAD to deduce template arguments
